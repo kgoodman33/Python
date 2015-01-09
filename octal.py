@@ -9,13 +9,16 @@ digits = []
 
 for x in start:
 	digits.append(x)
-	
+
+
 digits.reverse()
 a = 1
 b = 0
 length = len(digits)
 
 first_number = digits[0]
+
+
 num = 0
 x = 1
 y = 8
@@ -28,5 +31,8 @@ while ( x < length ):
 
 decimal = int(num) + int(first_number)
 
-print decimal
-	
+print first_number
+if int(first_number) != 8 or first_number != 9:
+	print decimal
+else:
+	print "That octal number has no decimal equivilent :( "
