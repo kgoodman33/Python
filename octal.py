@@ -31,8 +31,8 @@ while ( x < length ):
 
 decimal = int(num) + int(first_number)
 
-print first_number
-if int(first_number) != 8 or first_number != 9:
+
+if (int(first_number) != 8) and (int(first_number) != 9):
 	print decimal
 else:
 	print "That octal number has no decimal equivilent :( "
