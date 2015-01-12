@@ -41,7 +41,7 @@ print "The card number is: %r" % int(nums3)
 if int(check_digit) == int(last_digit):
 	print "The card is valid!"
 else:
-	print "The car is invalid!"
+	print "The card is invalid!"
 
 
 
