@@ -5,12 +5,18 @@ if sys.argv[1:]:
 	number = sys.argv[1]
 else:
 	number = raw_input("What's the number, fool? > ")
+
 nums = []
-nums = [int(i) for i in number]
+
+for i in number:
+	nums.append(i)
 
 last_digit = nums.pop()
 
+
 nums2 = nums[::-1]
+
+
 
 for i in range(len(nums2)):
 	if i % 2 == 0:
@@ -27,10 +33,14 @@ sum = 0
 for i in range(len(nums2)):
 	sum += nums2[i]
 
+	
 check_digit = (sum * 9) % 10
+
+
 
 if int(check_digit) == int(last_digit):
 	print "The card is valid!"
 else:
 	print "The card is invalid!"
+
 
