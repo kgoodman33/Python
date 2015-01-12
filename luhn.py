@@ -5,11 +5,8 @@ if sys.argv[1:]:
 	number = sys.argv[1]
 else:
 	number = raw_input("What's the number, fool? > ")
-
 nums = []
-
-for i in number:
-	nums.append(i)
+nums = [int(i) for i in number]
 
 last_digit = nums.pop()
 
