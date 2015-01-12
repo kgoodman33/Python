@@ -11,9 +11,10 @@ nums = []
 for i in number:
 	nums.append(i)
 
+last_digit = nums.pop()
+
 nums2 = nums[::-1]
 
-last_digit = nums2[0]
 for i in range(len(nums2)):
 	if i % 2 == 0:
 		nums2[i] = int(nums2[i]) * 2
@@ -28,31 +29,11 @@ for i in range(len(nums2)):
 sum = 0
 for i in range(len(nums2)):
 	sum += nums2[i]
-	
-
 
 check_digit = (sum * 9) % 10
 
-
-nums.append(str(check_digit))
-nums3 = ''.join(nums)
-
-
-
-
-
-if int(check_digit) == 0:
+if int(check_digit) == int(last_digit):
 	print "The card is valid!"
 else:
 	print "The card is invalid!"
 
-
-
-
-
-
-
-
-
-			
-		
